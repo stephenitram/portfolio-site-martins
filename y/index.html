@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martins Stephen | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="main-nav">
-        <div class="logo">
-          <a href="index.html">
-            <img src="logo.png" alt="logo" height="50px" width="100px" />
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-      </nav>
-    </header>
 
-    <div id="mobile-menu" class="mobile-menu">
-      <div class="close-btn" id="close-btn">&times;</div>
-      <ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martins Stephen | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="logo" height="50px" width="100px" />
+        </a>
+      </div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-    <div id="overlay" class="overlay"></div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
 
-    <section id="home" class="hero">
-      <h1>Martins Stephen</h1>
-      <p>
-        IT Operatons Manager | Technical Support Specialist | Cybersecurity
-        Analyst | Web & Graphic Designer
-      </p>
-    </section>
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="close-btn" id="close-btn">&times;</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div id="overlay" class="overlay"></div>
 
-    <section id="about" class="content">
-      <h2>About Me</h2>
-      <p>
-        I am an experienced IT professional with over a decade of expertise in
-        IT Operations, Technical Support, and Information Security. With a
-        strong focus on prolem-solving, systems support, and cybersecurity. I
-        have a proven track record of troubleshooting complex systems and
-        delivering exceptional technical support. I am eager to leverage my
-        broad skill set to contribute to impactful projects.
-      </p>
-      <div class="skills">
+  <section id="home" class="hero">
+    <h1>Martins Stephen</h1>
+    <p class="hero-subtitle">
+      IT Operations Manager • IT Support Specialist • System Administrator<br>
+      Cybersecurity Analyst • Web & Graphic Designer
+    </p>
+  </section>
+
+  <section id="about" class="content">
+    <h2>About Me</h2>
+    <p>
+      I am an experienced IT professional with over a decade of expertise in
+      IT Operations, Technical Support, and Information Security. With a
+      strong focus on problem-solving, systems support, and cybersecurity, I
+      have a proven track record of troubleshooting complex systems and
+      delivering exceptional technical support. I am eager to leverage my
+      broad skill set to contribute to impactful projects.
+    </p>
+    <div class="skills">
+      <div class="skill-category">
         <h3>Technical Skills</h3>
         <ul>
           <li>IT Operations</li>
@@ -73,6 +73,8 @@
           <li>Frontend Development</li>
           <li>Graphic Design</li>
         </ul>
+      </div>
+      <div class="skill-category">
         <h3>Soft Skills</h3>
         <ul>
           <li>Problem Solving</li>
@@ -81,358 +83,615 @@
           <li>Adaptability</li>
         </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects" class="content">
-      <h2>Projects</h2>
-      <div class="filters">
-        <button onclick="filterProjects('all')">All</button>
-        <button onclick="filterProjects('technical')">Technical</button>
-        <button onclick="filterProjects('web')">Web Apps</button>
-        <button onclick="filterProjects('graphic')">Graphic Design</button>
+  <!-- Statistics Counter Section -->
+  <section id="stats" class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number" data-target="12">0</div>
+        <div class="stat-label">Years Experience</div>
       </div>
-      <div class="project-grid">
-        <div class="project-card technical">
-          <h3>Technical Projects</h3>
+      <div class="stat-item">
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="16">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">Satisfied Clients</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="content">
+    <h2>Certifications & Education</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Introduction to IT Asset Management (ITAM)</h3>
+        <p class="cert-issuer">LinkedIn Learning</p>
+        <p class="cert-date">Issued: September 2024</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Green Digital Skills Certificate</h3>
+        <p class="cert-issuer">INCO Academy</p>
+        <p class="cert-date">Issued: March 2024</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Prompt Engineering for ChatGPT</h3>
+        <p class="cert-issuer">Vanderbilt University</p>
+        <p class="cert-date">Issued: March 2024</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Certified in Cybersecurity</h3>
+        <p class="cert-issuer">ISC2 (International Information System Security Certification Consortium)</p>
+        <p class="cert-date">Certified Professional</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Career Essentials in Generative AI</h3>
+        <p class="cert-issuer">Microsoft and LinkedIn</p>
+        <p class="cert-date">Issued: July 2023</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Information Systems Auditing, Controls and Assurance</h3>
+        <p class="cert-issuer">Hong Kong University of Science and Technology</p>
+        <p class="cert-date">Issued: July 2023</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Microsoft Azure Fundamentals</h3>
+        <p class="cert-issuer">Microsoft (AZ-900)</p>
+        <p class="cert-date">Cloud Computing Certification</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Microsoft 365 Essential Training for Administrators</h3>
+        <p class="cert-issuer">LinkedIn Learning</p>
+        <p class="cert-date">Issued: August 2022</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Problem Solving Using Computational Thinking</h3>
+        <p class="cert-issuer">University of Michigan</p>
+        <p class="cert-date">Issued: March 2022</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Healthcare IT Support Specialization</h3>
+        <p class="cert-issuer">Johns Hopkins University</p>
+        <p class="cert-date">Professional Certification</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Customer Service: Problem Solving and Troubleshooting</h3>
+        <p class="cert-issuer">LinkedIn Learning</p>
+        <p class="cert-date">Issued: August 2021</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Certified Network Security Specialist</h3>
+        <p class="cert-issuer">DefensifyOne</p>
+        <p class="cert-date">Network Security Certification</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Cisco CyberOps Associate</h3>
+        <p class="cert-issuer">Cisco Networking Academy</p>
+        <p class="cert-date">Cybersecurity Operations</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Windows 11 for IT Support: Advanced Troubleshooting</h3>
+        <p class="cert-issuer">LinkedIn Learning</p>
+        <p class="cert-date">Issued: August 2025</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>HSE 1 & 2</h3>
+        <p class="cert-issuer">Health, Safety & Environment</p>
+        <p class="cert-date">2024 - 2025</p>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Bachelor of Science - Computer Science</h3>
+        <p class="cert-issuer">Ibrahim Badamasi Babangida University</p>
+        <p class="cert-date">Graduated: April 2011</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline Section -->
+  <section id="experience" class="content">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">March 2020 - Present</div>
+          <h3>IT Operations Manager (IT Support Executive → IT Manager)</h3>
+          <p class="timeline-company">Mercedes-Benz Nigeria (Weststar Associates Limited) • Abuja, Nigeria</p>
           <p>
-            <strong
-              >Automotive Parts Order Tracker for After-Sales
-              Optimization</strong
-            >
+            Authorized dealer of sales and after-sales services for Mercedes-Benz in Nigeria. Manage IT Operations,
+            infrastructure, and security of the Abuja branch office. Oversee IT infrastructure, Active Directory,
+            Microsoft 365, and cloud security configurations. Manage network availability and security with Sophos XG
+            firewall and access points. Troubleshoot and fix server software issues such as XENTRY cars and IIS Trucks
+            to avoid workplan delays. Deliver comprehensive support for automotive diagnostic devices and scanners.
           </p>
-          <p>
-            At Weststar Abuja, I designed and implemented a custom automotive
-            parts order tracking system for the after-sales department using
-            Microsoft Lists. This solution was tailored to streamline the
-            tracking of customer parts orders, ensuring real-time visibility,
-            accountability, and improved communication across teams. The tracker
-            replaced manual and error-prone processes, resulting in a 40%
-            increase in operational efficiency and the elimination of
-            oversight-related errors. It featured automated status updates,
-            user-friendly interfaces, and integration with existing
-            workflows—empowering staff to manage orders with greater accuracy
-            and speed. This project exemplifies how low-code tools like
-            Microsoft Lists can be leveraged to deliver high-impact digital
-            solutions that enhance service delivery and customer satisfaction in
-            the automotive sector.
-          </p>
-          <br />
-          <p>
-            <strong
-              >Network Optimization & Uptime Assurance through Advanced Firewall
-              and Monitoring Strategies</strong
-            >
-          </p>
-          <p>
-            At Weststar Abuja, I engineered a highly resilient network
-            infrastructure that achieved 99.9% uptime by optimizing Sophos XG
-            Firewall traffic routing configurations and implementing proactive
-            ISP link monitoring strategies. This initiative was critical in
-            ensuring uninterrupted business operations and enhancing overall IT
-            service reliability. I utilized PRTG Network Monitor for real-time
-            performance tracking and integrated command-line interface (CLI)
-            monitoring for deeper diagnostics and faster response to anomalies.
-            These tools enabled continuous visibility into network health,
-            bandwidth usage, and potential points of failure—allowing for
-            preemptive action before issues could impact users. This project not
-            only improved network stability but also demonstrated the value of
-            combining intelligent firewall configuration with robust monitoring
-            practices to deliver enterprise-grade uptime and performance.
-          </p>
-          <br />
-          <p>
-            <strong
-              >Nationwide ERP Infrastructure Management & Workforce
-              Enablement</strong
-            >
-          </p>
-          <p>
-            At the Nigerian Postal Service (NIPOST) Headquarters in Abuja, I
-            managed the national deployment of the IFS ERP infrastructure,
-            overseeing critical components including the Database,
-            Application/Web Servers, and Electronic Data Interchange (EDI)
-            servers. This role demanded high-level expertise in enterprise
-            systems administration, performance tuning, and secure data
-            handling. Beyond infrastructure management, I led a nationwide
-            training initiative, equipping over 300 employees with the skills
-            needed to effectively utilize the IFS platform. This large-scale
-            capacity-building effort significantly improved system usage
-            efficiency, reduced operational bottlenecks, and enhanced data
-            accuracy across departments. This project highlights my ability to
-            manage complex IT ecosystems while driving digital literacy and
-            adoption at scale—ensuring both technical stability and
-            organizational readiness.
-          </p>
-          <br />
-          <p>
-            <strong
-              >Company-Wide Data Protection with BitLocker Encryption & OneDrive
-              Backup Integration</strong
-            >
-          </p>
-          <p>
-            At Weststar Abuja, I implemented a robust data protection strategy
-            across all mobile devices by deploying BitLocker encryption and
-            enabling OneDrive cloud backups. This initiative was designed to
-            safeguard sensitive company data, ensure compliance with data
-            security standards, and support seamless recovery in case of device
-            loss or failure. By configuring BitLocker, I ensured full-disk
-            encryption across the organization’s mobile endpoints, protecting
-            data at rest from unauthorized access. Simultaneously, I integrated
-            OneDrive for Business to automate secure cloud backups, enabling
-            real-time file synchronization and recovery. This dual-layered
-            approach significantly enhanced the company’s data resilience,
-            reduced the risk of data breaches, and empowered staff with secure,
-            mobile-friendly access to their work resources.
-          </p>
-          <br />
-          <p>
-            <strong
-              >Enhanced Network Visibility & Security with Sophos Access Point
-              Integration</strong
-            >
-          </p>
-          <p>
-            To strengthen network visibility and security at Weststar Abuja, I
-            implemented and configured Sophos Access Points (APs), ensuring
-            seamless integration with the existing Sophos XG Firewall
-            infrastructure. This deployment provided centralized control,
-            improved wireless coverage, and enabled real-time monitoring of all
-            connected devices. By leveraging Sophos’ synchronized security
-            ecosystem, I was able to enforce unified threat management policies
-            across both wired and wireless networks. The integration allowed for
-            granular traffic analysis, rogue device detection, and automated
-            response to potential threats—significantly enhancing the
-            organization’s cybersecurity posture. This project not only improved
-            network transparency and control but also laid the foundation for
-            scalable, secure wireless connectivity aligned with enterprise IT
-            standards.
-          </p>
-          <small
-            >Tech: IT operations, IT Infrastructure Management, Networking,
-            Cybersecurity, Project Management, Windows Server, SQL Server
-            Management Studio, Internet Information Services (IIS), Microsoft
-            List, Sophos XG Firewall, INFOSEC, Problem-solving, PRTG Network
-            Monitor, CLI, Visio</small
-          ><br />
-          <a href="#">🔗 View Projects and Certs.</a>
-        </div>
-        <div class="project-card web">
-          <h3>
-            Smart Lounge Experience: QR-Driven Mobile Web Platform for Customer
-            Engagement
-          </h3>
-          <p>
-            At Weststar Abuja, I led the designed and implementation of an
-            innovative mobile web platform aimed at enhancing customer
-            engagement within the waiting area and customer lounge. This
-            solution leveraged QR code technology to provide instant access to
-            detailed information about displayed accessories, transforming
-            passive showroom browsing into an interactive digital experience.
-          </p>
-          <p>
-            By integrating responsive web design with strategically placed QR
-            codes, customers could seamlessly scan and explore product details,
-            specifications, and promotional content directly from their mobile
-            devices—without the need for staff assistance. This initiative not
-            only improved customer satisfaction and product visibility but also
-            aligned with Weststar’s digital transformation goals by introducing
-            a low-touch, high-impact solution.
-          </p>
-          <p>
-            The project involved end-to-end execution, including requirements
-            gathering, UI/UX design, QR code integration, and deployment,
-            ensuring a scalable and user-friendly platform that continues to
-            support customer decision-making in real time.
-          </p>
-          <small
-            >Tech: HTML, CSS, JavaScript, Firebase (Free Hosting), Git, GitHub,
-            OneDrive, and Microsoft Excel (QR Generation)</small
-          ><br />
-          <a
-            href="https://1drv.ms/b/c/dde8affe1dca80a5/EQ_vQmjn3dZOgqVSysuDQtYBi2Aq7QFExULJUoAHnKVVCw?e=XBfGvd"
-            target="_blank"
-            >🔗 Live QR Codes</a
-          >
-          <a
-            href="https://github.com/stephenitram/mercedes-product-catalog.git"
-            target="_blank"
-            >📁 GitHub</a
-          >
-          <br />
-          <br />
-          <br />
-          <h3>Corporate Website Development for Plex-Multisolutions Ltd</h3>
-          <p>
-            I designed and developed the official website for
-            Plex-Multisolutions Ltd, a dynamic business service company based in
-            Abuja, Nigeria. The goal was to create a digital platform that
-            reflects the company’s versatility and professionalism across its
-            wide range of services—including printing, branding, graphic design,
-            IT training, and digital media solutions.
-          </p>
-          <p>The website features:</p>
-          <ul>
-            <li>
-              A clean, responsive design optimized for both desktop and mobile
-              users
-            </li>
-            <li>
-              Service-focused navigation to help clients quickly find relevant
-              offerings
-            </li>
-            <li>
-              Engaging visuals and content structure that align with the brand’s
-              identity
-            </li>
-            <li>
-              SEO-friendly architecture to improve online visibility and reach
-            </li>
-            <li>Contact and inquiry forms to streamline customer engagement</li>
-          </ul>
-          <p>
-            This project demonstrates my ability to translate a company’s
-            mission and service portfolio into a compelling online presence that
-            supports both brand credibility and business growth.
-          </p>
-          <small
-            >Tech: HTML, React JS, Tailwind CSS, Git, GitHub and Netlify (free
-            hosting)</small
-          ><br />
-          <a href="https://plex-multisolutions.netlify.app/" target="_blank"
-            >🔗 Live Site</a
-          >
-          <a
-            href="https://github.com/stephenitram/plex-multisolutions.git"
-            target="_blank"
-            >📁 GitHub</a
-          >
-          <br />
-          <br />
-          <br />
-          <h3>
-            Personal Portfolio Website – Showcasing IT Solutions & Digital
-            Innovation
-          </h3>
-          <p>
-            I designed and developed this portfolio website to serve as a
-            central hub for showcasing my work as an ICT Manager and IT
-            Solutions Specialist. The site highlights a diverse range of
-            projects across enterprise IT infrastructure, cybersecurity, digital
-            transformation, branding, and user experience design.
-          </p>
-          <p>
-            Built with a focus on clarity, responsiveness, and professional
-            presentation, the website features:
-          </p>
-          <ul>
-            <li>Detailed project case studies with measurable outcomes</li>
-            <br />
-            <li>Clean, modern UI/UX for easy navigation and readability</li>
-            <br />
-            <li>Mobile-first design to ensure accessibility across devices</li>
-            <br />
-            <li>
-              Integrated visuals and documentation to support each project
-              narrative
-            </li>
-          </ul>
-          <p>
-            This project reflects my ability to not only deliver impactful IT
-            solutions but also to communicate them effectively through digital
-            storytelling. It stands as both a technical and creative expression
-            of my professional journey.
-          </p>
-          <small
-            >Tech: HTML, CSS, JavaScript, Firebase (Free Hosting), ChatGPT,
-            Microsoft CoPilot, Git, and GitHub</small
-          ><br />
-          <a href="https://portfolio-site-martins.web.app" target="_blank"
-            >🔗 Live Site</a
-          >
-          <a
-            href="https://github.com/stephenitram/portfolio-site-martins"
-            target="_blank"
-            >📁 GitHub</a
-          >
-        </div>
-        <div class="project-card graphic">
-          <h3>
-            User-Centric Design for Digital Adoption, Operational Efficiency and
-            Product Branding
-          </h3>
-          <p>
-            While working with DabarObject and Weststar Abuja, I led the design
-            and development of user-centric tools to enhance both digital
-            adoption and operational workflows. For the National Primary Health
-            Care Development Agency (NPHCDA), I created comprehensive user
-            guides for the Madex 2.0 application. These guides were instrumental
-            in simplifying onboarding and boosting user confidence, ultimately
-            driving higher adoption rates across the organization.
-          </p>
-          <p>
-            At Weststar Abuja, I designed and implemented a suite of operational
-            tools including Vehicle Health Cards, Vehicle Tags, and Movement Log
-            Books. These tools streamlined vehicle tracking, maintenance
-            logging, and movement authorization processes—resulting in improved
-            operational efficiency and better resource accountability.
-          </p>
-          <p>
-            For Nature’s Trust Abuja, a premium organic skincare and haircare
-            brand, I developed a cohesive visual identity that reflects the
-            brand’s commitment to natural beauty and wellness. My work included
-            the design of a distinctive logo, product labels, and a suite of
-            visual content tailored for social media platforms. The logo was
-            crafted to embody the brand’s organic essence, while the product
-            labels were designed with clarity, elegance, and regulatory
-            compliance in mind—ensuring shelf appeal and consumer trust.
-            Additionally, I created engaging and visually consistent social
-            media content that helped boost brand recognition and customer
-            engagement across digital channels. This project combined creative
-            direction with strategic branding, resulting in a unified visual
-            language that resonates with Nature’s Trust’s target audience and
-            supports its market positioning as a trusted organic brand.
-          </p>
-          <small>Tools: Adobe Illustrator, Photoshop, InDesign, Canva</small
-          ><br />
-          <a
-            href="https://1drv.ms/b/c/dde8affe1dca80a5/ETOjG7ZW27REo_1HcXH5MssB7zy-c7ONBU-dBBtcBQ7row?e=bPla1Y"
-            target="_blank"
-            >🖼️ View Work</a
-          >
         </div>
       </div>
-    </section>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">September 2013 - March 2020</div>
+          <h3>Senior Program Analyst (PA II → PA I → Senior PA)</h3>
+          <p class="timeline-company">Nigerian Postal Service (NIPOST) Headquarters • Abuja, Nigeria</p>
+          <p>
+            National postal service operator and regulator. Managed the International Financial System (IFS) in Nigeria
+            for transmitting postal orders across NIPOST's HR Management system nationwide. Administered international
+            interchange servers including Database, Application/Web Servers, and Electronic Data Interchange (EDI)
+            servers. Led nationwide technical projects and provided IT support during IFS headcount verification.
+            Conducted nationwide training on IFS, postal systems, and HRMS applications.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">January 2013 - September 2013</div>
+          <h3>IT Support Officer</h3>
+          <p class="timeline-company">DabarObjects Solutions Limited • Abuja, Nigeria</p>
+          <p>
+            Provider of software development and IT solutions. Delivered nationwide support for MADEX 2.0 for NPHCDA
+            headquarters. Provided customer support for prognostics and reporting software. Researched and documented
+            solutions for program bugs and issues.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">September 2018 - Present</div>
+          <h3>IT Support Specialist (Volunteer)</h3>
+          <p class="timeline-company">Equitable Health Access Initiative (EHAI) • Abuja, Nigeria</p>
+          <p>
+            NGO focused on controlling infectious diseases such as Malaria, HIV & TB. Provide tools and on-demand IT
+            support for the organization's Abuja branch office. Carry out systems troubleshooting and repairs,
+            procurement, and other IT consulting for the organization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="resume" class="content">
-      <h2>Résumé</h2>
-      <a href="martins-stephen-resume.pdf" class="btn" download
-        >📄 Download PDF</a
-      >
-    </section>
+  <!-- Tools & Technologies Section -->
+  <section id="technologies" class="content">
+    <h2>Tools & Technologies</h2>
+    <div class="tech-categories">
+      <div class="tech-category">
+        <h3>Infrastructure & Systems</h3>
+        <div class="tech-grid">
+          <div class="tech-item">Windows Server</div>
+          <div class="tech-item">Azure AD</div>
+          <div class="tech-item">IAM</div>
+          <div class="tech-item">Virtualization</div>
+          <div class="tech-item">SQL Server</div>
+          <div class="tech-item">IIS (Internet Information Services)</div>
+          <div class="tech-item">Active Directory</div>
+          <div class="tech-item">Microsoft 365 Admin</div>
+          <div class="tech-item">ERP Support (IFS, Oracle, Odoo)</div>
+          <div class="tech-item">Disaster Recovery</div>
+          <div class="tech-item">Risk Management</div>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Security & Networking</h3>
+        <div class="tech-grid">
+          <div class="tech-item">Sophos XG Firewall</div>
+          <div class="tech-item">PRTG Network Monitor</div>
+          <div class="tech-item">Cybersecurity</div>
+          <div class="tech-item">Endpoint Security</div>
+          <div class="tech-item">Network Security</div>
+          <div class="tech-item">INFOSEC</div>
+          <div class="tech-item">BitLocker</div>
+          <div class="tech-item">Cisco CyberOps</div>
+          <div class="tech-item">Incident Response</div>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Development & Design</h3>
+        <div class="tech-grid">
+          <div class="tech-item">HTML & CSS</div>
+          <div class="tech-item">JavaScript</div>
+          <div class="tech-item">React</div>
+          <div class="tech-item">Python</div>
+          <div class="tech-item">Git & GitHub</div>
+          <div class="tech-item">Adobe Illustrator</div>
+          <div class="tech-item">Adobe Photoshop</div>
+          <div class="tech-item">Adobe InDesign</div>
+          <div class="tech-item">Canva</div>
+          <div class="tech-item">Microsoft Power Pages</div>
+          <div class="tech-item">Technical Documentation</div>
+          <div class="tech-item">Prompt Engineering</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="content">
-      <h2>Contact</h2>
-      <p>
-        📧 Email:
-        <a href="mailto:stephenitram@gmail.com">stephenitram@gmail.com</a>
-      </p>
-      <p>Let's connect on LinkedIn:</p>
-      <a href="https://www.linkedin.com/in/martins-stephen/" target="_blank"
-        >LinkedIn Profile</a
-      >
-    </section>
+  <section id="projects" class="content">
+    <h2>Projects</h2>
+    <div class="filters">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('technical')">Technical</button>
+      <button onclick="filterProjects('web')">Web Apps</button>
+      <button onclick="filterProjects('graphic')">Graphic Design</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card technical">
+        <h3>Technical Projects</h3>
+        <p>
+          <strong>Automotive Parts Order Tracker for After-Sales
+            Optimization</strong>
+        </p>
+        <p>
+          At Weststar Abuja, I designed and implemented a custom automotive
+          parts order tracking system for the after-sales department using
+          Microsoft Lists. This solution was tailored to streamline the
+          tracking of customer parts orders, ensuring real-time visibility,
+          accountability, and improved communication across teams. The tracker
+          replaced manual and error-prone processes, resulting in a 40%
+          increase in operational efficiency and the elimination of
+          oversight-related errors. It featured automated status updates,
+          user-friendly interfaces, and integration with existing
+          workflows—empowering staff to manage orders with greater accuracy
+          and speed. This project exemplifies how low-code tools like
+          Microsoft Lists can be leveraged to deliver high-impact digital
+          solutions that enhance service delivery and customer satisfaction in
+          the automotive sector.
+        </p>
+        <br />
+        <p>
+          <strong>Network Optimization & Uptime Assurance through Advanced Firewall
+            and Monitoring Strategies</strong>
+        </p>
+        <p>
+          At Weststar Abuja, I engineered a highly resilient network
+          infrastructure that achieved 99.9% uptime by optimizing Sophos XG
+          Firewall traffic routing configurations and implementing proactive
+          ISP link monitoring strategies. This initiative was critical in
+          ensuring uninterrupted business operations and enhancing overall IT
+          service reliability. I utilized PRTG Network Monitor for real-time
+          performance tracking and integrated command-line interface (CLI)
+          monitoring for deeper diagnostics and faster response to anomalies.
+          These tools enabled continuous visibility into network health,
+          bandwidth usage, and potential points of failure—allowing for
+          preemptive action before issues could impact users. This project not
+          only improved network stability but also demonstrated the value of
+          combining intelligent firewall configuration with robust monitoring
+          practices to deliver enterprise-grade uptime and performance.
+        </p>
+        <br />
+        <p>
+          <strong>Nationwide ERP Infrastructure Management & Workforce
+            Enablement</strong>
+        </p>
+        <p>
+          At the Nigerian Postal Service (NIPOST) Headquarters in Abuja, I
+          managed the national deployment of the IFS ERP infrastructure,
+          overseeing critical components including the Database,
+          Application/Web Servers, and Electronic Data Interchange (EDI)
+          servers. This role demanded high-level expertise in enterprise
+          systems administration, performance tuning, and secure data
+          handling. Beyond infrastructure management, I led a nationwide
+          training initiative, equipping over 300 employees with the skills
+          needed to effectively utilize the IFS platform. This large-scale
+          capacity-building effort significantly improved system usage
+          efficiency, reduced operational bottlenecks, and enhanced data
+          accuracy across departments. This project highlights my ability to
+          manage complex IT ecosystems while driving digital literacy and
+          adoption at scale—ensuring both technical stability and
+          organizational readiness.
+        </p>
+        <br />
+        <p>
+          <strong>Company-Wide Data Protection with BitLocker Encryption & OneDrive
+            Backup Integration</strong>
+        </p>
+        <p>
+          At Weststar Abuja, I implemented a robust data protection strategy
+          across all mobile devices by deploying BitLocker encryption and
+          enabling OneDrive cloud backups. This initiative was designed to
+          safeguard sensitive company data, ensure compliance with data
+          security standards, and support seamless recovery in case of device
+          loss or failure. By configuring BitLocker, I ensured full-disk
+          encryption across the organization’s mobile endpoints, protecting
+          data at rest from unauthorized access. Simultaneously, I integrated
+          OneDrive for Business to automate secure cloud backups, enabling
+          real-time file synchronization and recovery. This dual-layered
+          approach significantly enhanced the company’s data resilience,
+          reduced the risk of data breaches, and empowered staff with secure,
+          mobile-friendly access to their work resources.
+        </p>
+        <br />
+        <p>
+          <strong>Enhanced Network Visibility & Security with Sophos Access Point
+            Integration</strong>
+        </p>
+        <p>
+          To strengthen network visibility and security at Weststar Abuja, I
+          implemented and configured Sophos Access Points (APs), ensuring
+          seamless integration with the existing Sophos XG Firewall
+          infrastructure. This deployment provided centralized control,
+          improved wireless coverage, and enabled real-time monitoring of all
+          connected devices. By leveraging Sophos’ synchronized security
+          ecosystem, I was able to enforce unified threat management policies
+          across both wired and wireless networks. The integration allowed for
+          granular traffic analysis, rogue device detection, and automated
+          response to potential threats—significantly enhancing the
+          organization’s cybersecurity posture. This project not only improved
+          network transparency and control but also laid the foundation for
+          scalable, secure wireless connectivity aligned with enterprise IT
+          standards.
+        </p>
+        <small>Tech: IT operations, IT Infrastructure Management, Networking,
+          Cybersecurity, Project Management, Windows Server, SQL Server
+          Management Studio, Internet Information Services (IIS), Microsoft
+          List, Sophos XG Firewall, INFOSEC, Problem-solving, PRTG Network
+          Monitor, CLI, Visio</small><br />
+        <a href="#">🔗 View Projects and Certs.</a>
+      </div>
+      <div class="project-card web">
+        <h3>
+          Smart Lounge Experience: QR-Driven Mobile Web Platform for Customer
+          Engagement
+        </h3>
+        <p>
+          At Weststar Abuja, I led the design and implementation of an
+          innovative mobile web platform aimed at enhancing customer
+          engagement within the waiting area and customer lounge. This
+          solution leveraged QR code technology to provide instant access to
+          detailed information about displayed accessories, transforming
+          passive showroom browsing into an interactive digital experience.
+        </p>
+        <p>
+          By integrating responsive web design with strategically placed QR
+          codes, customers could seamlessly scan and explore product details,
+          specifications, and promotional content directly from their mobile
+          devices—without the need for staff assistance. This initiative not
+          only improved customer satisfaction and product visibility but also
+          aligned with Weststar’s digital transformation goals by introducing
+          a low-touch, high-impact solution.
+        </p>
+        <p>
+          The project involved end-to-end execution, including requirements
+          gathering, UI/UX design, QR code integration, and deployment,
+          ensuring a scalable and user-friendly platform that continues to
+          support customer decision-making in real time.
+        </p>
+        <small>Tech: HTML, CSS, JavaScript, Firebase (Free Hosting), Git, GitHub,
+          OneDrive, and Microsoft Excel (QR Generation)</small><br />
+        <a href="https://1drv.ms/b/c/dde8affe1dca80a5/EQ_vQmjn3dZOgqVSysuDQtYBi2Aq7QFExULJUoAHnKVVCw?e=XBfGvd"
+          target="_blank">🔗 Live QR Codes</a>
+        <a href="https://github.com/stephenitram/mercedes-product-catalog.git" target="_blank">📁 GitHub</a>
+        <br />
+        <br />
+        <br />
+        <h3>Corporate Website Development for Plex-Multisolutions Ltd</h3>
+        <p>
+          I designed and developed the official website for
+          Plex-Multisolutions Ltd, a dynamic business service company based in
+          Abuja, Nigeria. The goal was to create a digital platform that
+          reflects the company’s versatility and professionalism across its
+          wide range of services—including printing, branding, graphic design,
+          IT training, and digital media solutions.
+        </p>
+        <p>The website features:</p>
+        <ul>
+          <li>
+            A clean, responsive design optimized for both desktop and mobile
+            users
+          </li>
+          <li>
+            Service-focused navigation to help clients quickly find relevant
+            offerings
+          </li>
+          <li>
+            Engaging visuals and content structure that align with the brand’s
+            identity
+          </li>
+          <li>
+            SEO-friendly architecture to improve online visibility and reach
+          </li>
+          <li>Contact and inquiry forms to streamline customer engagement</li>
+        </ul>
+        <p>
+          This project demonstrates my ability to translate a company’s
+          mission and service portfolio into a compelling online presence that
+          supports both brand credibility and business growth.
+        </p>
+        <small>Tech: HTML, React JS, Tailwind CSS, Git, GitHub and Netlify (free
+          hosting)</small><br />
+        <a href="https://plex-multisolutions.netlify.app/" target="_blank">🔗 Live Site</a>
+        <a href="https://github.com/stephenitram/plex-multisolutions.git" target="_blank">📁 GitHub</a>
+        <br />
+        <br />
+        <br />
+        <h3>
+          Personal Portfolio Website – Showcasing IT Solutions & Digital
+          Innovation
+        </h3>
+        <p>
+          I designed and developed this portfolio website to serve as a
+          central hub for showcasing my work as an ICT Manager and IT
+          Solutions Specialist. The site highlights a diverse range of
+          projects across enterprise IT infrastructure, cybersecurity, digital
+          transformation, branding, and user experience design.
+        </p>
+        <p>
+          Built with a focus on clarity, responsiveness, and professional
+          presentation, the website features:
+        </p>
+        <ul>
+          <li>Detailed project case studies with measurable outcomes</li>
+          <br />
+          <li>Clean, modern UI/UX for easy navigation and readability</li>
+          <br />
+          <li>Mobile-first design to ensure accessibility across devices</li>
+          <br />
+          <li>
+            Integrated visuals and documentation to support each project
+            narrative
+          </li>
+        </ul>
+        <p>
+          This project reflects my ability to not only deliver impactful IT
+          solutions but also to communicate them effectively through digital
+          storytelling. It stands as both a technical and creative expression
+          of my professional journey.
+        </p>
+        <small>Tech: HTML, CSS, JavaScript, Firebase (Free Hosting), ChatGPT,
+          Microsoft CoPilot, Git, and GitHub</small><br />
+        <a href="https://portfolio-site-martins.web.app" target="_blank">🔗 Live Site</a>
+        <a href="https://github.com/stephenitram/portfolio-site-martins" target="_blank">📁 GitHub</a>
+      </div>
+      <div class="project-card graphic">
+        <h3>
+          User-Centric Design for Digital Adoption, Operational Efficiency and
+          Product Branding
+        </h3>
+        <p>
+          While working with DabarObject and Weststar Abuja, I led the design
+          and development of user-centric tools to enhance both digital
+          adoption and operational workflows. For the National Primary Health
+          Care Development Agency (NPHCDA), I created comprehensive user
+          guides for the Madex 2.0 application. These guides were instrumental
+          in simplifying onboarding and boosting user confidence, ultimately
+          driving higher adoption rates across the organization.
+        </p>
+        <p>
+          At Weststar Abuja, I designed and implemented a suite of operational
+          tools including Vehicle Health Cards, Vehicle Tags, and Movement Log
+          Books. These tools streamlined vehicle tracking, maintenance
+          logging, and movement authorization processes—resulting in improved
+          operational efficiency and better resource accountability.
+        </p>
+        <p>
+          For Nature’s Trust Abuja, a premium organic skincare and haircare
+          brand, I developed a cohesive visual identity that reflects the
+          brand’s commitment to natural beauty and wellness. My work included
+          the design of a distinctive logo, product labels, and a suite of
+          visual content tailored for social media platforms. The logo was
+          crafted to embody the brand’s organic essence, while the product
+          labels were designed with clarity, elegance, and regulatory
+          compliance in mind—ensuring shelf appeal and consumer trust.
+          Additionally, I created engaging and visually consistent social
+          media content that helped boost brand recognition and customer
+          engagement across digital channels. This project combined creative
+          direction with strategic branding, resulting in a unified visual
+          language that resonates with Nature’s Trust’s target audience and
+          supports its market positioning as a trusted organic brand.
+        </p>
+        <small>Tools: Adobe Illustrator, Photoshop, InDesign, Canva</small><br />
+        <a href="https://1drv.ms/b/c/dde8affe1dca80a5/ETOjG7ZW27REo_1HcXH5MssB7zy-c7ONBU-dBBtcBQ7row?e=bPla1Y"
+          target="_blank">🖼️ View Work</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Martins Stephen. All rights reserved.</p>
-    </footer>
+  <section id="resume" class="content">
+    <h2>Résumé</h2>
+    <a href="martins-stephen-resume.pdf" class="btn" download>📄 Download PDF</a>
+  </section>
 
-    <script src="scripts.js"></script>
+  <!-- Contact Form Section -->
+  <section id="contact" class="content">
+    <h2>Get In Touch</h2>
+    <p class="contact-intro">
+      Interested in working together? Fill out the form below and I'll get back to you as soon as possible.
+    </p>
 
-    <!-- back to th top button -->
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
 
-    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
-      ↑
-    </button>
-  </body>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn submit-btn">Send Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:stephenitram@gmail.com">stephenitram@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💼</span>
+          <div>
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/martins-stephen/" target="_blank">Connect with me</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <div>
+            <strong>Phone</strong>
+            <p>+234 XXX XXX XXXX</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Location</strong>
+            <p>Abuja, Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Martins Stephen. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+  <!-- back to th top button -->
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+    ↑
+  </button>
+</body>
+
 </html>
